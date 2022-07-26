@@ -1,5 +1,4 @@
-﻿//int num=new Random().Next(10,10000000);
-int num=100;
+﻿int num=new Random().Next(10,10000000);
 int result=ThirdDig(num);
 
 if(result!=-1) Console.WriteLine($"{num} -> {result}");
