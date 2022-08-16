@@ -7,7 +7,7 @@ int[] FillArray(int[] inputArray)
     Random rnm = new Random();
     for(int i=0; i < inputArray.Length;i++)
     {
-        inputArray[i]=(int)rnm.Next(0,99);
+        inputArray[i]=(int)rnm.Next(0,100);
     }
     return inputArray;
 }
