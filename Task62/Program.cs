@@ -50,6 +50,4 @@ Console.WriteLine("Введите размер квадратной матриц
 int sizeMatrix = Convert.ToInt32(Console.ReadLine());
 int[,] matrix= new int[sizeMatrix,sizeMatrix];
 
-
-FillSnail(matrix);
-PrintMatrix(matrix);
+PrintMatrix(FillSnail(matrix));
