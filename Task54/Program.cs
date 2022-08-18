@@ -38,9 +38,6 @@ int[,] FillMatrix(int[,] matrix,Random rnd)
     return matrix;
 }
 
-Random rnd = new Random();
-
-
 //Метод сортировки строк матрицы
 int [,] SortLine(int[,] matrix)
 {
@@ -65,8 +62,8 @@ int [,] SortLine(int[,] matrix)
     return matrix;
 }
 
+Random rnd = new Random();
 int[,] matrix= new int[rnd.Next(4,6),rnd.Next(3,5)];
-
 
 matrix=FillMatrix(matrix,rnd);
 Console.WriteLine("Исходная матрица");
