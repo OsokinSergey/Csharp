@@ -35,9 +35,6 @@ int[,] FillMatrix(int[,] matrix,Random rnd)
     return matrix;
 }
 
-Random rnd = new Random();
-
-
 //Метод поиска строки с наименьшой суммой
 int MinSumLine(int[,] matrix)
 {
@@ -59,8 +56,8 @@ int MinSumLine(int[,] matrix)
     return line;
 }
 
+Random rnd = new Random();
 int[,] matrix= new int[rnd.Next(4,6),rnd.Next(3,5)];
-
 matrix=FillMatrix(matrix,rnd);
 Console.WriteLine("Исходная матрица");
 PrintMatrix(matrix);
